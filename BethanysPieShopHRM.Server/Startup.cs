@@ -1,3 +1,5 @@
+using System;
+using BethanysPieShopHRM.Server.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +22,21 @@ namespace BethanysPieShopHRM.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddHttpClient<IEmployeeDataService, EmployeeDataService>(
+                client =>
+                {
+                    client.BaseAddress=new Uri("https://localhost:44340/");
+                });
+            services.AddHttpClient<ICountryDataService, CountryDataService>(
+                client =>
+                {
+                    client.BaseAddress = new Uri("https://localhost:44340/");
+                });
+            services.AddHttpClient<IJobCategoryDataService, JobCategoryDataService>(
+                client =>
+                {
+                    client.BaseAddress = new Uri("https://localhost:44340/");
+                });
             //.AddCircuitOptions(options =>{options.DetailedErrors = true;}); - will enable exception details on the browser
             services.AddServerSideBlazor().AddCircuitOptions(options =>
             {
