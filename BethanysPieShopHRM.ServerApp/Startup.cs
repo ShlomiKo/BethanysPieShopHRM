@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace BethanysPieShopHRM.Server
+namespace BethanysPieShopHRM.ServerApp
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace BethanysPieShopHRM.Server
             services.AddHttpClient<IEmployeeDataService, EmployeeDataService>(
                 client =>
                 {
-                    client.BaseAddress=new Uri("https://localhost:44340/");
+                    client.BaseAddress = new Uri("https://localhost:44340/");
                 });
             services.AddHttpClient<ICountryDataService, CountryDataService>(
                 client =>

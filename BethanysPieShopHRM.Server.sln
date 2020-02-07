@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.Server", "BethanysPieShopHRM.Server\BethanysPieShopHRM.Server.csproj", "{2D90FD7D-1814-423E-A0DC-54E39AB2F8EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Server", "BethanysPieShopHRM.Server\BethanysPieShopHRM.Server.csproj", "{2D90FD7D-1814-423E-A0DC-54E39AB2F8EE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Shared", "BethanysPieShopHRM.Shared\BethanysPieShopHRM.Shared.csproj", "{F0604723-2BFF-4408-B5F1-A85571AD643C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Api", "BethanysPieShopHRM.Api\BethanysPieShopHRM.Api.csproj", "{DADA94EC-913C-43FE-B1DF-7584F5B9A512}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{5362B614-63F1-41BC-AFC2-D5B0A5302D7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ServerApp", "BethanysPieShopHRM.ServerApp\BethanysPieShopHRM.ServerApp.csproj", "{ADD00A42-7BB9-488C-84B7-8AFF816093E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ClientApp", "BethanysPieShopHRM.Client\BethanysPieShopHRM.ClientApp.csproj", "{D2D176FB-DFAC-4584-BE04-03BD5B0FD01A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{5362B614-63F1-41BC-AFC2-D5B0A5302D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5362B614-63F1-41BC-AFC2-D5B0A5302D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5362B614-63F1-41BC-AFC2-D5B0A5302D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD00A42-7BB9-488C-84B7-8AFF816093E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD00A42-7BB9-488C-84B7-8AFF816093E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD00A42-7BB9-488C-84B7-8AFF816093E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD00A42-7BB9-488C-84B7-8AFF816093E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D176FB-DFAC-4584-BE04-03BD5B0FD01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D176FB-DFAC-4584-BE04-03BD5B0FD01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D176FB-DFAC-4584-BE04-03BD5B0FD01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D176FB-DFAC-4584-BE04-03BD5B0FD01A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
